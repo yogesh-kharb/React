@@ -15,6 +15,7 @@ function App() {
     const incvalue = () => {
         if(counter == 20){
             alert("!!!!! Counter can not be above 20. !!!!!");
+            return;
         }
         counter ++;
         dhannoCounter(counter);
@@ -23,6 +24,7 @@ function App() {
     const decvalue = () => {
         if(counter == 0){
             alert("!!!!! Counter can not be negative. !!!!!");
+            return;
         }
         counter --;
         dhannoCounter(counter); // this is updating the value of counter at every place in UI
